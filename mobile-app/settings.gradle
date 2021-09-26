@@ -9,3 +9,4 @@ dependencyResolutionManagement {
 rootProject.name = "Yiadom Dispatch Service"
 include ':rider'
 include ':shared'
+include ':customer'

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- nav destinations -->
+    <item name="nav_welcome" type="id" />
+    <item name="nav_login" type="id" />
+    <item name="nav_phone_auth" type="id" />
+    <item name="nav_dashboard" type="id" />
+    <item name="nav_user" type="id" />
+    <item name="nav_create_order" type="id" />
+    <item name="nav_order" type="id" />
+    <item name="nav_history" type="id" />
+    <item name="nav_map" type="id" />
+    <item name="nav_rider_picker" type="id" />
+    <item name="nav_payment" type="id" />
+    <item name="nav_dashboard_url" type="string">dispatch://dashboard</item>
+
+    <!-- fragments -->
+    <item name="nav_graph" type="id" />
+    <item name="nav_host_fragment" type="id" />
+</resources>

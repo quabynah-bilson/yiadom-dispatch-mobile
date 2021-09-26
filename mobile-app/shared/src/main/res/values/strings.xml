@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Dispatch Service</string>
+    <string name="app_desc">Deliver orders and get a generous reward</string>
+    <string name="explore">Explore</string>
+    <string name="are_you_ready">Are you ready?</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_in_desc">Sign in to get started. This will only take a moment</string>
+    <string name="use_phone_number">Use phone number</string>
+    <string name="google_sign_in">Continue with Google</string>
+    <string name="sign_in_phone">Sign in with your phone number</string>
+    <string name="almost_there">Almost there…</string>
+    <string name="sign_in_phone_desc">Enter your phone number to receive a one-time request code. Make sure the number is active</string>
+    <string name="verify">Verify number</string>
+    <string name="send_code">Send code</string>
+    <string name="phone_number_hint">Phone number</string>
+    <!-- todo: change to his web sdk client id -->
+    <string name="default_web_client_id">766446245313-n2qandn63jurbrgu156rc8311eprt1tq.apps.googleusercontent.com</string>
+</resources>

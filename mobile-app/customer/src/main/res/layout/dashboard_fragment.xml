@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="36dp"
+        android:weightSum="10"
+        tools:context=".view.DashboardFragment">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/welcome_animation"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_url="@string/track_order_anim_url" />
+
+        <!-- Order Actions. -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="16dp">
+
+            <!-- Send package. -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/send_package_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:paddingHorizontal="8dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/send_package_header"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingVertical="8dp"
+                    android:text="@string/send_package"
+                    android:textAppearance="?textAppearanceHeadline6"
+                    app:drawableEndCompat="@drawable/ic_twotone_arrow_right_alt_24"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/send_package_subhead"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/send_package_desc"
+                    android:textAppearance="?textAppearanceSubtitle2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/send_package_header" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- Receive package. -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/receive_package_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:paddingHorizontal="8dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/receive_package_header"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingVertical="8dp"
+                    android:text="@string/receive_package"
+                    android:textAppearance="?textAppearanceHeadline6"
+                    app:drawableEndCompat="@drawable/ic_twotone_arrow_right_alt_24"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/receive_package_subhead"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/receive_package_desc"
+                    android:textAppearance="?textAppearanceSubtitle2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/receive_package_header" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- Track package. -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/track_package_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:paddingHorizontal="8dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/track_package_header"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingVertical="8dp"
+                    android:text="@string/track_package"
+                    android:textAppearance="?textAppearanceHeadline6"
+                    app:drawableEndCompat="@drawable/ic_twotone_arrow_right_alt_24"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/track_package_subhead"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/track_package_desc"
+                    android:textAppearance="?textAppearanceSubtitle2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/track_package_header" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- Track order -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="8dp">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/order_id_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:hint="@string/order_track_hint"
+                android:textAlignment="center">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/order_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionSend"
+                    android:inputType="textCapCharacters" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/track_order_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:paddingVertical="16dp"
+                android:text="@string/track_order" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/create_order"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:alpha="?emphasisHigh"
+                android:text="@string/add_package_action_hint" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

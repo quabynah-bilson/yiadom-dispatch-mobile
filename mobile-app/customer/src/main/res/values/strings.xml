@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Customer Dispatch Service</string>
+    <string name="app_desc">Send any order at anytime from anywhere securely</string>
+    <string name="order_track_hint">Enter Order ID</string>
+    <string name="track_order">Track Your Order</string>
+    <string name="add_package_action_hint">I don\'t have a package to track yet</string>
+    <string name="track_package">Track Package</string>
+    <string name="track_package_desc">Want to track a package? Type the order ID below to get started</string>
+    <string name="receive_package">Receive Package</string>
+    <string name="receive_package_desc">Want to receive a package from someone? Use our services</string>
+    <string name="send_package">Send Package</string>
+    <string name="send_package_desc">Want to send a package to someone? Use our services</string>
+</resources>

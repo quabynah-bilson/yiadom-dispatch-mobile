@@ -1,0 +1,63 @@
+plugins {
+    id 'com.android.application'
+    id 'dagger.hilt.android.plugin'
+    id "androidx.navigation.safeargs"
+    id "com.google.android.libraries.mapsplatform.secrets-gradle-plugin"
+}
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        applicationId "com.yiadom.dispatch.customer"
+        minSdk 23
+        targetSdk 31
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        release {
+            keyAlias 'upload'
+            keyPassword 'dispatch'
+            storeFile file('C:\\Users\\quaby\\Documents\\GitHub\\yiadom-dispatch-mobile\\mobile-app\\keystore\\customer-keystore.jks')
+            storePassword 'dispatch'
+        }
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.release
+        }
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    implementation project(path: ':shared')
+    implementation "com.google.dagger:hilt-android:2.38.1"
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.3.1'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1'
+    annotationProcessor "com.google.dagger:hilt-compiler:2.38.1"
+}
+apply plugin: 'com.google.gms.google-services'

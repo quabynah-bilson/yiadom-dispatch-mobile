@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="welcome_anim_url">https://assets3.lottiefiles.com/packages/lf20_qrhvxl9m.json</string>
+    <string name="order_packed_anim_url">https://assets2.lottiefiles.com/packages/lf20_3WsNKy.json</string>
+    <string name="receive_order_anim_url">https://assets2.lottiefiles.com/packages/lf20_0vKKEb.json</string>
+    <string name="track_order_anim_url">https://assets3.lottiefiles.com/packages/lf20_1n2cvwnt.json</string>
+</resources>
