@@ -53,7 +53,13 @@ public class DashboardFragment extends Fragment {
         } catch (Exception e) {
             Timber.e(e);
         }
-        binding.trackOrderBtn.setOnClickListener(v -> Snackbar.make(v, "Enter your order id below", Snackbar.LENGTH_SHORT).show());
+        binding.trackOrderBtn.setOnClickListener(v -> {
+            if (binding.orderId.getText().toString().isEmpty()) {
+                Snackbar.make(v, "Enter an order ID first", Snackbar.LENGTH_SHORT).show();
+            } else {
+                // TODO: 9/26/2021 Navigate to order details page and show tracking mode
+            }
+        });
 
     }
 }

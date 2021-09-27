@@ -4,7 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/quaby/Documents/GitHub/yiadom-dispatch-mobile/mobile-app/customer/src/main/res/layout/activity_customer_main.xml" value="0.2747863247863248" />
+        <entry key="..\:/Users/quaby/Documents/GitHub/yiadom-dispatch-mobile/mobile-app/customer/src/main/res/layout/create_order_fragment.xml" value="0.2747863247863248" />
         <entry key="..\:/Users/quaby/Documents/GitHub/yiadom-dispatch-mobile/mobile-app/customer/src/main/res/layout/dashboard_fragment.xml" value="0.2747863247863248" />
+        <entry key="..\:/Users/quaby/Documents/GitHub/yiadom-dispatch-mobile/mobile-app/customer/src/main/res/layout/page_destination_location.xml" value="0.2747863247863248" />
+        <entry key="..\:/Users/quaby/Documents/GitHub/yiadom-dispatch-mobile/mobile-app/customer/src/main/res/layout/page_pickup_location.xml" value="0.2747863247863248" />
+        <entry key="..\:/Users/quaby/Documents/GitHub/yiadom-dispatch-mobile/mobile-app/rider/src/main/res/layout/activity_maps.xml" value="0.2747863247863248" />
         <entry key="..\:/Users/quaby/Documents/GitHub/yiadom-dispatch-mobile/mobile-app/rider/src/main/res/layout/activity_rider_main.xml" value="0.2623931623931624" />
         <entry key="..\:/Users/quaby/Documents/GitHub/yiadom-dispatch-mobile/mobile-app/rider/src/main/res/layout/dashboard_fragment.xml" value="0.2747863247863248" />
         <entry key="..\:/Users/quaby/Documents/GitHub/yiadom-dispatch-mobile/mobile-app/shared/src/main/res/drawable/avatar.xml" value="0.24722222222222223" />

@@ -10,4 +10,6 @@
     <string name="receive_package_desc">Want to receive a package from someone? Use our services</string>
     <string name="send_package">Send Package</string>
     <string name="send_package_desc">Want to send a package to someone? Use our services</string>
+    <string name="next">Next</string>
+    <string name="select_a_pick_up_location">Pick up location…</string>
 </resources>

@@ -40,7 +40,7 @@ public class LoginFragment extends Fragment {
     SharedPreferences prefs;
     private AuthViewModel authViewModel;
     private LoginFragmentBinding binding;
-    private ActivityResultLauncher<Intent> googleAuthInvoker = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(),
+    private final ActivityResultLauncher<Intent> googleAuthInvoker = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(),
             result -> {
                 Intent data = result.getData();
                 Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);

@@ -15,4 +15,7 @@
     <string name="phone_number_hint">Phone number</string>
     <!-- todo: change to his web sdk client id -->
     <string name="default_web_client_id">766446245313-n2qandn63jurbrgu156rc8311eprt1tq.apps.googleusercontent.com</string>
+    <string name="location_hint">Address will appear here</string>
+    <string name="confirm">Confirm</string>
+    <string name="back">Back</string>
 </resources>
