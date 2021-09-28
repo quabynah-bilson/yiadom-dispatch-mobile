@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="com.yiadom.dispatch.model.OrderPackageType" />
+
+        <variable
+            name="packageType"
+            type="OrderPackageType" />
+
+        <variable
+            name="selected"
+            type="Boolean" />
+    </data>
+
+    <com.yiadom.dispatch.view.widget.CheckableConstraintLayout
+        android:id="@+id/container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="@{selected}">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="8dp">
+
+            <FrameLayout
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:alpha="?emphasisLow"
+                android:background="?colorSecondary">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_twotone_call_24"
+                    android:tint="?colorOnSecondary" />
+
+            </FrameLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@{packageType.name()}"
+                android:textAppearance="?textAppearanceHeadline6"
+                tools:text="@tools:sample/first_names" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </com.yiadom.dispatch.view.widget.CheckableConstraintLayout>
+</layout>

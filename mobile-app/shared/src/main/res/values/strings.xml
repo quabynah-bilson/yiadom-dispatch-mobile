@@ -18,4 +18,6 @@
     <string name="location_hint">Address will appear here</string>
     <string name="confirm">Confirm</string>
     <string name="back">Back</string>
+    <string name="destination_address">Destination Address</string>
+    <string name="pickup_address">Pickup Address</string>
 </resources>

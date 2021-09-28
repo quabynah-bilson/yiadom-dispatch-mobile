@@ -16,6 +16,8 @@ public class OrderViewModel extends ViewModel {
     private GeoPoint _destinationLocation;
     @Nullable
     private String _rider;
+    @Nullable
+    private String _packageType;
 
     void usePickupLocation(double latitude, double longitude) {
         _orderState.postValue(CreateOrderState.HAS_PICKUP_LOCATION);
@@ -32,15 +34,21 @@ public class OrderViewModel extends ViewModel {
         this._rider = rider;
     }
 
-    void makePayment() {
+    void makePayment(String transactionId, double amount) {
         _orderState.postValue(CreateOrderState.HAS_PAID);
         // TODO: 9/27/2021 Make payment
+    }
+
+    void usePackageType(String packageType) {
+        _orderState.postValue(CreateOrderState.HAS_PACKAGE_TYPE);
+        this._packageType = packageType;
     }
 
     public enum CreateOrderState {
         INITIAL,
         HAS_PICKUP_LOCATION,
         HAS_DESTINATION_LOCATION,
+        HAS_PACKAGE_TYPE,
         HAS_RIDER,
         HAS_PAID
     }

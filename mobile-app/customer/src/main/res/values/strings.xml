@@ -12,4 +12,6 @@
     <string name="send_package_desc">Want to send a package to someone? Use our services</string>
     <string name="next">Next</string>
     <string name="select_a_pick_up_location">Pick up location…</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

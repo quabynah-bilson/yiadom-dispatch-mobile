@@ -6,8 +6,17 @@
         <entry key="..\:/Users/quaby/Documents/GitHub/yiadom-dispatch-mobile/mobile-app/customer/src/main/res/layout/activity_customer_main.xml" value="0.2747863247863248" />
         <entry key="..\:/Users/quaby/Documents/GitHub/yiadom-dispatch-mobile/mobile-app/customer/src/main/res/layout/create_order_fragment.xml" value="0.2747863247863248" />
         <entry key="..\:/Users/quaby/Documents/GitHub/yiadom-dispatch-mobile/mobile-app/customer/src/main/res/layout/dashboard_fragment.xml" value="0.2747863247863248" />
+        <entry key="..\:/Users/quaby/Documents/GitHub/yiadom-dispatch-mobile/mobile-app/customer/src/main/res/layout/fragment_destination_location.xml" value="0.2747863247863248" />
+        <entry key="..\:/Users/quaby/Documents/GitHub/yiadom-dispatch-mobile/mobile-app/customer/src/main/res/layout/fragment_order_status.xml" value="0.2747863247863248" />
+        <entry key="..\:/Users/quaby/Documents/GitHub/yiadom-dispatch-mobile/mobile-app/customer/src/main/res/layout/fragment_package_picker.xml" value="0.2747863247863248" />
+        <entry key="..\:/Users/quaby/Documents/GitHub/yiadom-dispatch-mobile/mobile-app/customer/src/main/res/layout/fragment_pickup_location.xml" value="0.1" />
+        <entry key="..\:/Users/quaby/Documents/GitHub/yiadom-dispatch-mobile/mobile-app/customer/src/main/res/layout/fragment_rider_picker.xml" value="0.2747863247863248" />
+        <entry key="..\:/Users/quaby/Documents/GitHub/yiadom-dispatch-mobile/mobile-app/customer/src/main/res/layout/item_order_package.xml" value="0.2747863247863248" />
         <entry key="..\:/Users/quaby/Documents/GitHub/yiadom-dispatch-mobile/mobile-app/customer/src/main/res/layout/page_destination_location.xml" value="0.2747863247863248" />
+        <entry key="..\:/Users/quaby/Documents/GitHub/yiadom-dispatch-mobile/mobile-app/customer/src/main/res/layout/page_order_status.xml" value="0.2747863247863248" />
+        <entry key="..\:/Users/quaby/Documents/GitHub/yiadom-dispatch-mobile/mobile-app/customer/src/main/res/layout/page_package_picker.xml" value="0.2747863247863248" />
         <entry key="..\:/Users/quaby/Documents/GitHub/yiadom-dispatch-mobile/mobile-app/customer/src/main/res/layout/page_pickup_location.xml" value="0.2747863247863248" />
+        <entry key="..\:/Users/quaby/Documents/GitHub/yiadom-dispatch-mobile/mobile-app/customer/src/main/res/layout/page_rider_picker.xml" value="0.2747863247863248" />
         <entry key="..\:/Users/quaby/Documents/GitHub/yiadom-dispatch-mobile/mobile-app/rider/src/main/res/layout/activity_maps.xml" value="0.2747863247863248" />
         <entry key="..\:/Users/quaby/Documents/GitHub/yiadom-dispatch-mobile/mobile-app/rider/src/main/res/layout/activity_rider_main.xml" value="0.2623931623931624" />
         <entry key="..\:/Users/quaby/Documents/GitHub/yiadom-dispatch-mobile/mobile-app/rider/src/main/res/layout/dashboard_fragment.xml" value="0.2747863247863248" />

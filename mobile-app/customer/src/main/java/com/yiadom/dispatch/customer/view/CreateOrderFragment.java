@@ -41,7 +41,7 @@ public class CreateOrderFragment extends Fragment implements OnPageNavigationLis
                              @Nullable Bundle savedInstanceState) {
         // create a translucent status bar
         try {
-            getActivity().getWindow().setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
+            requireActivity().getWindow().setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
                     WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
         } catch (Exception e) {
             Timber.e(e);
@@ -53,7 +53,7 @@ public class CreateOrderFragment extends Fragment implements OnPageNavigationLis
     @Override
     public void onDestroy() {
         try {
-            getActivity().getWindow().clearFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
+            requireActivity().getWindow().clearFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
         } catch (Exception e) {
             Timber.e(e);
         }
@@ -80,8 +80,9 @@ public class CreateOrderFragment extends Fragment implements OnPageNavigationLis
             }
         });
 
-        var pageAdapter = new CreateOrderPagerAdapter(this, this);
+        var pageAdapter = new CreateOrderPagerAdapter(requireActivity(), this);
         binding.pager.setAdapter(pageAdapter);
+        binding.pager.setUserInputEnabled(false);
     }
 
     @Override
@@ -94,6 +95,24 @@ public class CreateOrderFragment extends Fragment implements OnPageNavigationLis
         binding.pager.setCurrentItem(binding.pager.getCurrentItem() + 1);
         if (isPickupLocation) orderViewModel.usePickupLocation(latitude, longitude);
         else orderViewModel.useDestinationLocation(latitude, longitude);
+    }
+
+    @Override
+    public void onPackageSelected(String packageType) {
+        binding.pager.setCurrentItem(binding.pager.getCurrentItem() + 1);
+        orderViewModel.usePackageType(packageType);
+    }
+
+    @Override
+    public void onRiderSelected(String rider) {
+        binding.pager.setCurrentItem(binding.pager.getCurrentItem() + 1);
+        orderViewModel.pickRider(rider);
+    }
+
+    @Override
+    public void onPaymentComplete(String transactionId, double amount) {
+        binding.pager.setCurrentItem(binding.pager.getCurrentItem() + 1);
+        orderViewModel.makePayment(transactionId, amount);
     }
 
     @Override

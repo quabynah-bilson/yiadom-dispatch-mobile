@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <data>
 
@@ -8,20 +9,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/nav_back"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="40dp"
-            android:contentDescription="@string/back"
-            android:rotation="180"
-            android:src="@drawable/ic_twotone_arrow_right_alt_24"
-            app:backgroundTint="?android:colorBackground"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="match_parent"
+        tools:context=".view.order.PickupLocationFragment">
 
         <!-- map -->
         <androidx.fragment.app.FragmentContainerView
@@ -51,7 +40,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingVertical="16dp"
-                android:text="Pickup Address"
+                android:text="@string/pickup_address"
                 android:textAppearance="?textAppearanceHeadline6" />
 
             <com.google.android.material.textfield.TextInputLayout
@@ -77,14 +66,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:enabled="false"
                 android:gravity="start|center_vertical"
                 android:paddingVertical="16dp"
                 android:text="@string/confirm"
+                android:enabled="false"
                 app:icon="@drawable/ic_twotone_arrow_right_alt_24"
                 app:iconGravity="end" />
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </layout>
