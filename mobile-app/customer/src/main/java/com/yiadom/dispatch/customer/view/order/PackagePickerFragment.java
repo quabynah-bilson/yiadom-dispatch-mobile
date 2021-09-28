@@ -54,7 +54,9 @@ public class PackagePickerFragment extends Fragment implements OnPackageSelected
 
         packageListAdapter = new OrderPackageListAdapter(this);
         binding.orderPackageList.setAdapter(packageListAdapter);
-            packageListAdapter.submitList(Arrays.stream(OrderPackageType.values()).collect(Collectors.toList()));
+        packageListAdapter.submitList(Arrays.stream(OrderPackageType.values()).collect(Collectors.toList()));
+
+        binding.navBack.setOnClickListener(v -> navigationListener.onNavBackPressed());
     }
 
     @Override

@@ -78,6 +78,8 @@ public class DestinationLocationFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+        binding.navBack.setOnClickListener(v -> navigationListener.onNavBackPressed());
         this.placeSearchLauncher = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(),
                 result -> {
                     if (result.getData() == null) {

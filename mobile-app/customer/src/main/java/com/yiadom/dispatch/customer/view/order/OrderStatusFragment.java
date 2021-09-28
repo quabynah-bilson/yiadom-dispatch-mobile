@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.yiadom.dispatch.customer.databinding.FragmentOrderStatusBinding;
@@ -36,5 +37,12 @@ public class OrderStatusFragment extends Fragment {
         // Inflate the layout for this fragment
         binding = FragmentOrderStatusBinding.inflate(inflater);
         return binding.getRoot();
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        binding.navBack.setOnClickListener(v -> navigationListener.onNavBackPressed());
     }
 }

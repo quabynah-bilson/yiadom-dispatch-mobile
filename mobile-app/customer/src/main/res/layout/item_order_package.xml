@@ -9,51 +9,39 @@
         <variable
             name="packageType"
             type="OrderPackageType" />
-
-        <variable
-            name="selected"
-            type="Boolean" />
     </data>
 
-    <com.yiadom.dispatch.view.widget.CheckableConstraintLayout
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@+id/container"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:checked="@{selected}">
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp">
 
-        <androidx.appcompat.widget.LinearLayoutCompat
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:paddingHorizontal="16dp"
-            android:paddingVertical="8dp">
+        <FrameLayout
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:alpha="?emphasisLow"
+            android:background="?colorSecondary">
 
-            <FrameLayout
-                android:layout_width="56dp"
-                android:layout_height="56dp"
-                android:alpha="?emphasisLow"
-                android:background="?colorSecondary">
-
-                <androidx.appcompat.widget.AppCompatImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:src="@drawable/ic_twotone_call_24"
-                    android:tint="?colorOnSecondary" />
-
-            </FrameLayout>
-
-            <androidx.appcompat.widget.AppCompatTextView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="@{packageType.name()}"
-                android:textAppearance="?textAppearanceHeadline6"
-                tools:text="@tools:sample/first_names" />
+                android:layout_gravity="center"
+                android:src="@drawable/ic_twotone_call_24"
+                android:tint="?colorOnSecondary" />
 
-        </androidx.appcompat.widget.LinearLayoutCompat>
+        </FrameLayout>
 
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@{packageType.name()}"
+            android:textAppearance="?textAppearanceHeadline6"
+            tools:text="@tools:sample/first_names" />
 
-    </com.yiadom.dispatch.view.widget.CheckableConstraintLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
 </layout>

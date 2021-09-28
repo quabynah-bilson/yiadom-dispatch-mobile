@@ -2,6 +2,7 @@ package com.yiadom.dispatch.view.widget;
 
 import android.content.Context;
 import android.widget.Checkable;
+import android.widget.FrameLayout;
 
 import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -9,7 +10,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 /**
  * A {@linkplain ConstraintLayout} that is {@linkplain Checkable}
  */
-public class CheckableConstraintLayout extends ConstraintLayout implements Checkable {
+public class CheckableConstraintLayout extends FrameLayout implements Checkable {
     private boolean _checked = false;
 
     public CheckableConstraintLayout(@NonNull Context context) {

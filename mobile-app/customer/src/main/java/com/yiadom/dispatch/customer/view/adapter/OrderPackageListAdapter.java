@@ -65,8 +65,7 @@ public class OrderPackageListAdapter extends ListAdapter<OrderPackageType, Order
 
         void bind(OrderPackageType packageType, OnPackageSelectedListener listener, boolean selected) {
             binding.setVariable(BR.packageType, packageType);
-            binding.setVariable(BR.selected, selected);
-            binding.container.setChecked(selected);
+//            binding.container.setChecked(selected);
             binding.getRoot().setOnClickListener(v -> listener.onPackageSelected(packageType));
         }
     }
